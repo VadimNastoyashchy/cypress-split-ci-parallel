@@ -7,7 +7,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-      containers: [1, 2, 3]
+        containers: [1, 2, 3]
     steps:
       - name: Run split Cypress tests 🧪
         uses: cypress-io/github-action@v5
