@@ -18,9 +18,9 @@ export default defineConfig({
         },
       },
     },
-  },
-  setupNodeEvents(on, config) {
-    cypressSplit(on, config);
-    return config;
+    setupNodeEvents(on, config) {
+      cypressSplit(on, config);
+      return config;
+    },
   },
 });
