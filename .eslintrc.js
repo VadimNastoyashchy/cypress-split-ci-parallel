@@ -22,16 +22,9 @@ module.exports = {
                 'allowTemplateLiterals': true
             }
         ],
-        '@typescript-eslint/typedef': [
-            'error',
-            {
-                'parameter': true
-            }
-        ],
         '@typescript-eslint/semi': [
             'error'
         ],
-        '@typescript-eslint/explicit-function-return-type': ['error']
     },
     extends: [
         'plugin:cypress/recommended'
