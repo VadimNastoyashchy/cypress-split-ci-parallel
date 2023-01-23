@@ -7,7 +7,10 @@
     "tsc": "npx tsc --project tsconfig.json --noEmit",
     "lint": "eslint . --ext .ts",
     "check": "npm run tsc && npm run lint",
-    "open": "npm run check && npx cypress open"
+    "open": "npm run check && npx cypress open",
+    "run": "npx cypress run",
+    "merge-report": "npx mochawesome-merge \"cypress/results/*.json\" -o mochawesome.json",
+    "generate-report": "npx marge mochawesome.json"
   },
   "repository": {
     "type": "git",
@@ -28,6 +31,8 @@
     "eslint": "^8.25.0",
     "eslint-plugin-cypress": "^2.12.1",
     "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.2.2",
+    "mochawesome-report-generator": "^6.2.0",
     "typescript": "^4.8.4"
   }
 }
